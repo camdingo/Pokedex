@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required (VERSION 3.8)
 
-# set the project name
-project(Pokedex)
+project(Pokemon)
 
-# add the executable
-add_executable(Pokedex main.cpp)
+set( DCMAKE_TOOLCHAIN_FILE "D:/Code/vcpkg/Microsoft/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
+add_subdirectory(src)
