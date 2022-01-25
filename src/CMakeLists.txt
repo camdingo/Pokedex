@@ -13,7 +13,7 @@ set( CXX_SRCS
 )
 
 include_directories( 
-	"D:/Code/vcpkg/Microsoft/vcpkg/installed/x64-windows/include"
+	"C:/vcpkg/vcpkg-master/installed/x86-windows/include"
 )
 
 find_package(Boost 1.77.0 COMPONENTS program_options)

@@ -8,47 +8,6 @@ using namespace std;
 
 namespace po = boost::program_options;
 
-class basic_info {
-private:
-	int pokedex_number;           //(The entry number of the Pokemon in the National Pokedex)
-	string english_name;          //(The English name of the Pokemon)
-	string german_name;           //(The German name of the Pokemon)
-	string japanese_name;         //(The Original Japanese name of the Pokemon)
-	int generation;               //(The numbered generation which the Pokemon was first introduced)
-	string status;                //(Denotes if the Pokemon is normal, sublegendary, legendary or mythical)
-	string species;               //(The Categorie of the Pokemon)
-	int type_number;              //(Number of types that the Pokemon has)
-	string type_1;                //(The Primary Type of the Pokemon)
-	string type_2;                //(The Secondary Type of the Pokemon if it has it)
-public:
-	basic_info() {
-		pokedex_number = 0;
-		english_name = "null";
-		german_name = "null";
-		japanese_name = "null";
-		generation = 0;
-		status = "null";
-		species = "null";
-		type_number = 0;
-		type_1 = "null";
-		type_2 = "null";
-	}
-	~basic_info();
-	void set_basicinfo(int pokenum, string engname, string germname, string japname, int gen, string stat, string speci, int typenum, string type1, string type2) {
-		pokedex_number = pokenum;
-		english_name = engname;
-		german_name = germname;
-		japanese_name = japname;
-		generation = gen;
-		status = stat;
-		species = speci;
-		type_number = typenum;
-		type_1 = type1;
-		type_2 = type2;
-	}
-	void get_basicInfo
-};
-
 class size_info {
 private:
 	int height_m;                   //(Height of the Pokemon in meters)
@@ -165,11 +124,11 @@ public:
 		against_fairy = 0.0;
 	}
 	~weakness_info();
-};
+}; 
 
 int main(int argc, char** argv)
 {
-	ifstream pokeDex;
+	/*ifstream pokeDex;
 	pokeDex.open("pokedex_(Update_5.20).csv");
 
 	vector<basic_info> info_poke;
@@ -184,6 +143,33 @@ int main(int argc, char** argv)
 
 
 		pokemonStorage = "";
+	}*/
+
+	std::cout << "Will George ever work on this?!" << std::endl;
+
+	try {
+
+		po::options_description desc("Allowed options");
+		desc.add_options()
+			("help", "produce help message")
+			//add more here
+			;
+
+		po::variables_map vm;
+		po::store(po::parse_command_line(argc, argv, desc), vm);
+		po::notify(vm);
+
+		if (vm.count("help")) {
+			std::cout << desc << "\n";
+			return 0;
+		}
+	}
+	catch (std::exception& e) {
+		std::cerr << "error: " << e.what() << "\n";
+		return 1;
+	}
+	catch (...) {
+		std::cerr << "Exception of unknown type!\n";
 	}
 
 
