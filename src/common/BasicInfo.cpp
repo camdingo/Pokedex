@@ -16,7 +16,7 @@ BasicInfo::BasicInfo()
 	, _type2("")
 {
 
-};
+}
 
 BasicInfo::BasicInfo(int pokenum, string const& engname, string const& germname, string const& japname,
 	int gen, string const& stat, string const& speci, int typenum, string const& type1, string const& type2)
@@ -32,6 +32,6 @@ BasicInfo::BasicInfo(int pokenum, string const& engname, string const& germname,
 	, _type2(type2)
 {
 
-};
+}
 
-BasicInfo::~BasicInfo() { cout << "Destroying"; };
+BasicInfo::~BasicInfo() { cout << "Destroying" << endl; }

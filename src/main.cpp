@@ -8,18 +8,6 @@ using namespace std;
 
 namespace po = boost::program_options;
 
-class size_info {
-private:
-	int height_m;                   //(Height of the Pokemon in meters)
-	int weight_kg;                  //(The Weight of the Pokemon in kilograms)
-public:
-	size_info() {
-		height_m = 0;
-		weight_kg = 0;
-	}
-	~size_info();
-};
-
 class abilities_info {
 private:
 	int abilities_number;            //(The number of abilities of the Pokemon)
