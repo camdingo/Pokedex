@@ -19,7 +19,7 @@ StatsInfo::StatsInfo()
 }
 
 StatsInfo::StatsInfo(int hp, int attack, int defense, int spatt, int spdef, int speed, 
-	int catchrate, int basefriend, int baseexp, int growthrate)
+					 int catchrate, int basefriend, int baseexp, int growthrate)
 	: _hp(hp)
 	, _attack(attack)
 	, _defense(defense)
