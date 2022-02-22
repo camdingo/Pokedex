@@ -13,14 +13,12 @@ set( CXX_SRCS
 )
 
 include_directories( 
-	"C:\vcpkg\vcpkg-master\installed\x86-windows\include"
+	"C:/vcpkg/vcpkg-master/installed/x86-windows/include/boost/"
 )
-
-find_package(Boost 1.77.0 COMPONENTS program_options)
  
 # Add source to this project's executable.
 add_executable (Pokedex ${CXX_SRCS})
 
 target_link_libraries( Pokedex
-	Boost::program_options
+	#Boost::program_options
 )

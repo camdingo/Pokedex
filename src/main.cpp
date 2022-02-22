@@ -1,56 +1,10 @@
 #include <iostream>
-#include <vector>
-#include <fstream>
-#include <sstream>
 #include <string>
-#include <boost/program_options.hpp>
+//#include <boost/program_options.hpp>
 using namespace std;
 
-namespace po = boost::program_options;
+//namespace po = boost::program_options;
 
-class abilities_info {
-private:
-	int abilities_number;            //(The number of abilities of the Pokemon)
-	string ability_1;                //(Name of the first Pokemon ability)
-	string ability_2;                //(Name of the second Pokemon ability if any)
-	string ability_hidden;           //(Name of the hidden Pokemon ability if any)
-public:
-	abilities_info() {
-		abilities_number = 0;
-		ability_1 = "null";
-		ability_2 = "null";
-		ability_hidden = "null";
-	}
-	~abilities_info();
-};
-
-class stats_info {
-private:
-	int hp;                           //(The Base HP of the Pokemon)
-	int attack;                       //(The Base Attack of the Pokemon)
-	int defense;                      //(The Base Defense of the Pokemon)
-	int sp_attack;                    //(The Base Special Attack of the Pokemon)
-	int sp_defense;                   //(The Base Special Defense of the Pokemon)
-	int speed;                        //(The Base Speed of the Pokemon)
-	int catch_rate;                   //(Catch Rate of the Pokemon)
-	int base_friendship;              //(Base Friendship of the Pokemon)
-	int base_experience;              //(Base experience of a wild Pokemon when catched)
-	int growth_rate;                  //(The Growth Rate of the Pokemon)
-public:
-	stats_info() {
-		hp = 0;
-		attack = 0;
-		defense = 0;
-		sp_attack = 0;
-		sp_defense = 0;
-		speed = 0;
-		catch_rate = 0;
-		base_friendship = 0;
-		base_experience = 0;
-		growth_rate = 0;
-	}
-	~stats_info();
-};
 
 class egg_info {
 private:
@@ -116,28 +70,11 @@ public:
 
 int main(int argc, char** argv)
 {
-	/*ifstream pokeDex;
-	pokeDex.open("pokedex_(Update_5.20).csv");
-
-	vector<basic_info> info_poke;
-	vector<size_info> size_poke;
-	vector<abilities_info> abilities_poke;
-	vector<stats_info> stats_poke;
-	vector<egg_info> egg_poke;
-	vector<weakness_info> weakness_poke;
-
-
-	while (getline(pokeDex, pokemonStorage, ",")) {
-
-
-		pokemonStorage = "";
-	}*/
-
 	std::cout << "Will George ever work on this?!" << std::endl;
 
 	try {
 
-		po::options_description desc("Allowed options");
+		/*po::options_description desc("Allowed options");
 		desc.add_options()
 			("help", "produce help message")
 			//add more here
@@ -146,11 +83,12 @@ int main(int argc, char** argv)
 		po::variables_map vm;
 		po::store(po::parse_command_line(argc, argv, desc), vm);
 		po::notify(vm);
-
+		
 		if (vm.count("help")) {
 			std::cout << desc << "\n";
 			return 0;
 		}
+		*/
 	}
 	catch (std::exception& e) {
 		std::cerr << "error: " << e.what() << "\n";
