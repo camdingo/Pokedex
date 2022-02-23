@@ -21,5 +21,5 @@ AbilitiesInfo::AbilitiesInfo(int abilnum, string const& abil1, string const& abi
 
 }
 
-AbilitiesInfo::~AbilitiesInfo() { cout << "Destroying" << endl; };
+AbilitiesInfo::~AbilitiesInfo() { cout << "Destroying" << endl; }
 

@@ -34,4 +34,4 @@ StatsInfo::StatsInfo(int hp, int attack, int defense, int spatt, int spdef, int 
 
 }
 
-StatsInfo::~StatsInfo() { cout << "Destroying" << endl; };
+StatsInfo::~StatsInfo() { cout << "Destroying" << endl; }

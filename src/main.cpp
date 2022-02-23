@@ -5,25 +5,6 @@ using namespace std;
 
 //namespace po = boost::program_options;
 
-
-class egg_info {
-private:
-	int egg_type_number;              //(Number of groups where a Pokemon can hatch)
-	string egg_type_1;                //(Name of the first egg group where a Pokemon can hatch)
-	string egg_type_2;                //(Name of the second egg group where a Pokemon can hatch if any)
-	double percentage_male;           //(The percentage of the species that are male.Blank if the Pokemon is genderless or the info is unknown)
-	int egg_cycles;                   //(The number of cycles(255 - 257 steps) required to hatch an egg of the Pokemon)
-public:
-	egg_info() {
-		egg_type_number = 0;
-		egg_type_1 = "null;";
-		egg_type_2 = "null;";
-		percentage_male = 0.0;
-		egg_cycles = 0;
-	}
-	~egg_info();
-};
-
 class weakness_info {
 private:
 	double against_normal; //(Denotes the multiplier applied when damage is taken from an attack of a ___ type pokemon)
@@ -70,7 +51,7 @@ public:
 
 int main(int argc, char** argv)
 {
-	std::cout << "Will George ever work on this?!" << std::endl;
+	std::cout << "George is working on this!" << std::endl;
 
 	try {
 

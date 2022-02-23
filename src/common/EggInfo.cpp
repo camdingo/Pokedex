@@ -24,3 +24,4 @@ EggInfo::EggInfo(int eggtypenum, string const& eggtype1, string const& eggtype2,
 
 }
 
+EggInfo::~EggInfo() { cout << "Destroying" << endl; }

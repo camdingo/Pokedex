@@ -24,9 +24,9 @@ public:
 
 private:
 	//assignments
-	int _eggTypeNumber;
-	string _eggType1;
-	string _eggType2;
-	double _percentageMale;
-	int _eggCycles;
+	int _eggTypeNumber;                      //(Number of groups where a Pokemon can hatch)
+	string _eggType1;                        //(Name of the first egg group where a Pokemon can hatch)
+	string _eggType2;                        //(Name of the second egg group where a Pokemon can hatch if any)
+	double _percentageMale;                  //(The percentage of the species that are male.Blank if the Pokemon is genderless or the info is unknown)
+	int _eggCycles;                          //(The number of cycles(255 - 257 steps) required to hatch an egg of the Pokemon)
 };
